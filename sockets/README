@@ -1,0 +1,30 @@
+
+This directory contains the sockets files for
+the MINPACK-2 test problem collection.
+
+Nonlinear Systems of Equations
+------------------------------
+
+fic.m --- flow in a channel
+sfd.m --- swirling flow between disks
+ier.m --- incompressible elastic rods
+sfi.m --- solid fule ignition
+fdc.m --- flow in a driven cavity
+
+
+Minimization
+------------
+
+ept.m --- elastic-plastic torsion
+pjb.m --- pressure distribution in a journal bearing
+msa.m --- minimal surfaces
+odc.m --- optimal design with composites
+gl1.m --- inhomogeneous superconductors: 1-d Ginzburg-Landau 
+ssc.m --- steady-state combustion
+gl2.m --- inhomogeneous superconductors: 2-d Ginzburg-Landau 
+
+
+Note: These MATLAB m-files are meant to be used with the 
+      matlabsockets library of Barry Smith in
+      pub/pdetools/matlabsockets.tar.Z
+

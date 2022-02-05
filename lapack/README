@@ -1,0 +1,18 @@
+
+This directory contains the LAPACK files needed by MINPACK-2.
+
+dgeqrf.f dgeqr2.f --- Computes the QR factorization
+dpotf2.f dpotrf.f --- Computes the Cholesky factorization
+dormqr.f dorm2r.f ---  Aplies the matrix Q
+dorg2r.f dorgqr.f ---  Generates the matrix Q
+ dlarf.f dlarfb.f
+dlarfg.f dlarft.f ---  Applies a reflector
+dlamc1.f dlamc2.f
+dlamc3.f dlamc4.f
+dlamc5.f          ---  Computes machine constants
+ilaenv.f          ---  Returns problem-dependent parametrs
+dlapy2.f          ---  Computation of sqrt(x**2+y**2)
+ lsame.f          ---  Compares strings
+xerbla.f          ---  xerbla.f
+
+

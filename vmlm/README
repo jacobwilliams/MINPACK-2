@@ -1,0 +1,78 @@
+
+This directory contains software for the 
+MINPACK-2 limited memory variable metric algorithm.
+The compressed tar file vmlm.tar.gz contains 
+the software and a test program.
+
+*****************************************************************
+
+           COPYRIGHT NOTIFICATION
+
+This program discloses material protectable under copyright laws of
+the United States. Permission to copy and modify this software and its
+documentation for internal research use is hereby granted, provided
+that this notice is retained thereon and on all copies or modifications. 
+The University of Chicago makes no representations as to the suitability 
+and operability of this software for any purpose. 
+It is provided "as is" without express or implied warranty.
+
+Use of this software for commercial purposes is expressly prohibited
+without contacting 
+
+   Jorge J. More'
+   Mathematics and Computer Science Division
+   Argonne National Laboratory
+   9700 S. Cass Ave.
+   Argonne, Illinois 60439-4844
+   e-mail: more@mcs.anl.gov
+
+Argonne National Laboratory with facilities in the states of
+Illinois and Idaho, is owned by The United States Government, and
+operated by the University of Chicago under provision of a contract
+with the Department of Energy.
+
+*****************************************************************
+
+           INSTRUCTIONS
+          
+1. Create the vmlm directory structure with
+       gzip -d vmlm.tar.gz
+       tar -xvf vmlm.f
+   This produces the directory vmlm and 
+   subdirectories source, blas, tprobs.
+
+2. Change directories to vmlm and install vmlm with 
+       make install
+   This creates libraries in each of the subdirectories
+
+3. Create the executable vmlm with 
+       make vmlm 
+   and run the sample problems by executing vmlm
+   The timer in file dtimer.f assumes that elapsed time is 
+   given by etime; you may need to modify this file.
+
+4. Compare the output in vmlm.out with the output in vmlm.sun4
+
+*****************************************************************
+
+           ADDITIONAL INFORMATION
+
+D. C. Liu and J. Nocedal, 
+On the limited memory BFGS method for large scale optimization, 
+Math. Programming, 45 (1989), pp. 503--528.
+
+J. Nocedal, 
+The performance of several algorithms for large-scale 
+unconstrained optimization, 
+in Large-Scale Numerical Optimization, 
+T. F.  Coleman and Y. Li, eds., 
+Society for Industrial and Applied Mathematics, 1991, pp. 138--151.
+
+B. M. Averick and J. J. More',
+Evaluation of large-scale optimization problems on vector 
+and parallel architectures,
+SIAM J. Optimization 4, (1994), 708-721.
+
+*****************************************************************
+
+Last modification: June 26, 1996

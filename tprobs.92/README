@@ -1,0 +1,141 @@
+Beta Release: 11/13/92
+
+This directory contains the 1992 version of the MINPACK-2 test problem 
+collection. Included in the software are nonlinear least squares problems,
+systems of nonlinear equations, and minimization problems.  Both single and
+double precision versions of the test problems are available. 
+
+Subroutines are named by the following convention: The first letter in each
+subroutine name dictates arithmetic precision, s for single, d for double.
+The second thru fifth letters describe the application, eg. fic denotes
+the flow in a channel problem. The sixth and seventh letters denote the 
+subroutine action.  
+
+	letters 6 and 7                 action
+        ---------------                 ------
+              fj          function, Jacobian, initial approximation
+              js          Jacobian times vector
+              fg          function, gradient, initial approximation
+              hs          Hessian times vector
+              sp          Jacobian sparsity structure
+              bc          Boundary data
+
+Please report any comments and errors to: 
+
+	Jorge J. More' 
+        Mathematics and Computer Science Division                            
+        Argonne National Laboratory
+        9700 South Cass Avenue
+        Argonne, IL  60439
+        email: more@mcs.anl.gov
+
+Further information on the MINPACK-2 test problem collection is
+contained in the report
+
+B. M. Averick, R. G. Carter, J. J. More', and G-L. Xue,
+The MINPACK-2 test problem collection,
+Argonne National Laboratory,
+Mathematics and Computer Science Division,
+Preprint MCS-P153-0692, June 1992.
+
+A compressed postscript version of this report is contained in the
+file P153.ps.Z
+             
+Changes since first Beta release:
+
+  File                 Date and Description of change
+  ----                 -------- ---------------------
+dficsp.f/sficsp.f    (11/24/92) Extra entries in the sparsity structure
+                     were removed.
+
+dsfdsp.f/ssfdsp.f    (11/24/92) Extra entries in the sparsity structure
+                     were removed.
+
+dctsfj.f/sctsfj.f    (12/23/92) Attempted to open the wrong file for data.
+
+diacfj.f/siacfj.f    (12/23/92) Ability to evaluate initial X added.
+
+dierjs.f/siacjs.f    (1/12/93) Erroneous multiplication fixed. Some
+                     comments were changed.
+
+dierfj.f/siacfj.f    (1/12/93) Erroneous Jacobian elements fixed. 
+
+diersp.f/siersp.f    (1/12/93) Extra entries in the sparsity structure
+                     were removed.
+
+
+Nonlinear Systems of Equations:
+-------------------------------
+
+Double Precision     Single Precision      Application
+----------------     ----------------      -----------
+   dfdcfj.f		sfdcfj.f         Flow in a Driven Cavity
+   dfdcsp.f		sfdcsp.f
+   dfdcjs.f		sfdcjs.f
+   dficfj.f 		sficfj.f         Flow in a Channel        
+   dficsp.f 		sficsp.f                 
+   dficjs.f             sficjs.f 
+   dsfdfj.f             ssfdfj.f         Swirling Flow between Disks
+   dsfdsp.f             ssfdsp.f     
+   dsfdjs.f             ssfdjs.f    
+   dierfj.f             sierfj.f         Incompressible Elastic Rod
+   diersp.f             siersp.f
+   dierjs.f             sierjs.f
+   dsfifj.f             ssfifj.f         Solid Fuel Ignition
+   dsfisp.f             ssfisp.f
+   dsfijs.f             ssfijs.f
+   dhhdfj.f             shhdfj.f         Human Heart Dipole 
+   dcpffj.f             scpffj.f         Combustion of Propane - Full
+   dcprfj.f             scprfj.f         Combustion of Propane - Reduced
+
+
+
+Nonlinear Least Squares:
+------------------------
+
+Double Precision     Single Precision      Application
+----------------     ----------------      -----------
+   diacfj.f		siacfj.f     Isomerization of alpha-Pinene: Collocation
+   diadfj.f		siadfj.f     Isomerization of alpha-Pinene: Direct
+   diaofj.f  		siaofj.f     Isomerization of alpha-Pinene: Constraints
+   diarfj.f		siarfj.f     Isomerization of alpha-Pinene: Residuals
+   dctsfj.f		sctsfj.f     Coating Thickness Standardization
+   dcts.dat		scts.dat
+   dedffj.f		sedffj.f     Exponential Data Fitting
+   dgdffj.f		sgdffj.f     Gaussian Data Fitting
+   datrfj.f		satrfj.f     Analysis of Thermistor Resistance
+   daerfj.f		saerfj.f     Analysis on an Enzyme Reaction
+   dchqfj.f		schqfj.f     Chebychev Quadrature
+
+
+Minimization:
+-------------
+
+Double Precision     Single Precision      Application
+----------------     ----------------      -----------
+   deptfg.f		septfg.f         Elastic-Plastic Torsion
+   deptsp.f		septsp.f    
+   depths.f		sepths.f
+   dpjbfg.f		spjbfg.f         Pressure in a Journal Bearing
+   dpjbsp.f		spjbsp.f       
+   dpjbhs.f		spjbhs.f
+   dmsafg.f		smsafg.f         Minimal Surface Area
+   dmsabc.f		smsabc.f
+   dmsasp.f		smsasp.f
+   dmsahs.f		smsahs.f
+   dodcfg.f		sodcfg.f         Optimal Design with Composites
+   dodcsp.f		sodcsp.f
+   dodchs.f		sodchs.f
+   dgl1fg.f		sgl1fg.f         Ginzburg-Landau Superconductivity (1D)
+   dgl1sp.f		sgl1sp.f
+   dgl1hs.f		sgl1hs.f
+   dljcfg.f		sljcfg.f         Leonard-Jones Clusters
+   dsscfg.f		ssscfg.f         Steady State Combustion
+   dsscsp.f		ssscsp.f
+   dsschs.f		ssschs.f
+   dgl2fg.f		sgl2fg.f         Ginzburg-Landau Superconductivity (2D)
+   dgl2sp.f		sgl2sp.f
+
+
+
+

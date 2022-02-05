@@ -1,0 +1,9 @@
+
+This directory has the files for the algorithm 
+used to compute the step in a trust region method.
+Further information can be found in the paper
+
+J. J. Mor\'e and D. C. Sorensen,
+Computing a trust region step,
+SIAM J. Sci. Statist. Comput. 4 (1983), 553-572.
+
